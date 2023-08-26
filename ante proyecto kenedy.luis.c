@@ -1,9 +1,10 @@
 /*----------------------------------------------------------------
-|  Autor:   Kenedy Ventura/ Luis Angel Diaz                        |     
-|  Matricula: 1162939 / 1-20-1949                                  |
-|  Fecha: 15/8/2023                              Version: 0.4	   |
-|----------------------------------------------------------------- |
-|  Descripcion del Programa: Sistema de Renta de Vehiculos         |
+|  Autor:   kenedy ventura/ luis angel                            Matricula: 1162939/
+                                                                     1-20-1949   |
+|  Fecha: 15/8/2023                              Versi?n: 0.4		           |
+|-----------------------------------------------------------------            |
+|  Descripci?n del Programa:  reenta de vehiculos                            |
+|                                                                            |
 | ----------------------------------------------------------------*/
 
 
@@ -11,7 +12,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-//declaro la eestructura 
+                                //deeclaro la eestructura 
 typedef struct {
     int codigo;
     char descripcion[41];
@@ -50,7 +51,7 @@ void cargar()             //funcion para ingresar vehioculos al archivo
     gets(producto.descripcion);
     printf("Ingrese el precio:");
     scanf("%f",&producto.precio);
-    fwrite(&producto, sizeof(tproducto), 1, arch); //escribir  la direccion de producto con el tamaï¿½o de la estructura
+    fwrite(&producto, sizeof(tproducto), 1, arch); //escribir  la direccion de producto con el tamaño de la estructura
     fclose(arch);
     continuar();
 }
